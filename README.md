@@ -18,3 +18,11 @@
 ##  Spring Cloud Starters
 ##  Spring Cloud CLI
 ##  Spring Cloud Contract
+
+#   Spring Cloud Netflix
+##  Service Discovery
+##  Circuit Breaker
+##  Declarative REST Client
+##  Client Side Load Balancer
+##  External Configuration
+##  Router and Filter
