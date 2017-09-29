@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://${user.home}/config-repo
+# 拉去仓库后在本地缓存的位置
+          basedir: /data/config/config-repo
+# ???
+#          environment:
+# 指定搜索的git仓库路径 如果根目录找不到会查找demo目录下的  还可以配置成 demo*代表demo或者demo的子目录中搜索
+          search-paths: demo
+# 指定仓库的 分支名称  commitId或者tag
+          default-label: dev
+

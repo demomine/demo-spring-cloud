@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: s1pring-cloud-demo22
+  config:
+    name: s1pring-cloud-demo22
+server:
+  port: 8123
+

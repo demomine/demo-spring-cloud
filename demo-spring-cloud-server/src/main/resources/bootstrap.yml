@@ -1,0 +1,9 @@
+cloud:
+  config:
+    uri: http://localhost:8080
+spring:
+  cloud:
+    config:
+      label: dev
+      name: s1pring-cloud-demo
+      profile: test
