@@ -20,9 +20,30 @@
 ##  Spring Cloud Contract
 
 #   Spring Cloud Netflix
-##  Service Discovery
+##  Service Discovery client
+1.  依赖
+```
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+</dependency>
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-commons</artifactId>
+</dependency>
+```
+2.  配置
+```
+
+```
+##  Service Discovery server
+
+3.  问题
+The replica size seems to be empty. Check the route 53 DNS Registry
+>
 ##  Circuit Breaker
 ##  Declarative REST Client
 ##  Client Side Load Balancer
 ##  External Configuration
 ##  Router and Filter
+

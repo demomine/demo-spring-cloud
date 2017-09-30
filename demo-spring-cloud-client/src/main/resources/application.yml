@@ -1,0 +1,13 @@
+server:
+ port: 8333
+spring:
+ application:
+   name: demo-springcloud-client
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8555/eureka/
+
+
+
+

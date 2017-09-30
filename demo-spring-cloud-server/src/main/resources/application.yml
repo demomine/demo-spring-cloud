@@ -1,0 +1,12 @@
+server:
+  port: 8555
+eureka:
+  instance:
+    hostname: loclahost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url: http://localhost:8555/eureka/
+spring:
+  application:
+    name: demo-springcloud-server
