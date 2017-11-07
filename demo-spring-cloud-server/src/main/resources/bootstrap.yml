@@ -5,6 +5,8 @@ spring:
   application:
     name: demo-spring-cloud-consul
 
+management:
+  context-path: /application
 ---
 
 spring:
@@ -17,5 +19,10 @@ spring:
 #        default-context: apps
 #        profile-separator: ','
         format: yaml
+      discovery:
+        health-check-path: ${management.context-path}/health
+        health-check-timeout: 10s
+
+
 
 

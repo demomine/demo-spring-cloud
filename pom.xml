@@ -2,30 +2,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <modules>
-        <module>demo-spring-cloud-config-server</module>
-        <module>demo-spring-cloud-server</module>
-        <module>demo-spring-cloud-client</module>
-    </modules>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.0.M3</version>
     </parent>
 
+    <modules>
+        <module>demo-spring-cloud-config-server</module>
+        <module>demo-spring-cloud-server</module>
+        <module>demo-spring-cloud-client</module>
+    </modules>
+
     <groupId>com.lance.demo</groupId>
     <artifactId>demo-spring-cloud</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+
     <properties>
         <java.version>1.8</java.version>
         <lombok.version>1.16.16</lombok.version>
     </properties>
 
-
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.lance.demo</groupId>
+                <artifactId>demo-spring-cloud-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -33,29 +38,18 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-           <!-- <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-consul-dependencies</artifactId>
-                <version>1.2.1.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>-->
         </dependencies>
     </dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+
+
     <repositories>
         <repository>
             <id>spring-milestones</id>
