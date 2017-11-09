@@ -10,7 +10,7 @@ management:
 ---
 
 spring:
-  profiles: default
+  profiles: dev
   cloud:
     consul:
       config:
@@ -20,8 +20,19 @@ spring:
 #        profile-separator: ','
         format: yaml
       discovery:
-        health-check-path: ${management.context-path}/health
+        health-check-path: ${management.context-path}/health1
         health-check-timeout: 10s
+        acl-token: 0BB2DCA0-F8D4-457B-866C-5BD5B30BEC63
+        tags: dev
+        management-tags: dev
+        query-passing: true
+        heartbeat:
+          enabled: true
+        catalog-services-watch-timeout: 200
+        health-check-critical-timeout: 60s
+logging:
+  level:
+    org.springframework: trace
 
 
 

@@ -18,3 +18,7 @@
 ##  Spring Cloud Starters
 ##  Spring Cloud CLI
 ##  Spring Cloud Contract
+
+#   Spring Cloud Consul
+
+
