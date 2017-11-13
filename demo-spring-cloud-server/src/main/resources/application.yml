@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo-spring-cloud-sleuth
+  zipkin:
+    base-url: http://47.94.151.242:9411/
+    service:
+      name: ${spring.application.name}

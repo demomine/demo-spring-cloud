@@ -18,3 +18,18 @@
 ##  Spring Cloud Starters
 ##  Spring Cloud CLI
 ##  Spring Cloud Contract
+
+
+##  Spring cloud sleuth
+### 整合支持
+1.  Runnable and Callable
+2.  Hystrix
+3.  RxJava
+4.  HTTP integration
+5.  HTTP client integration
+6.  WebClient
+7.  Traverson
+8.  Feign
+9.  Asynchronous communication
+10. Messaging
+11. Zuul
