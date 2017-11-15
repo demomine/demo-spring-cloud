@@ -1,4 +1,4 @@
-package com.lance.demo.springcloud.client.service;
+package com.lance.demo.springcloud.zuul.springcloud.client.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.stereotype.Service;

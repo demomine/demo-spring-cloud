@@ -6,6 +6,7 @@
         <module>demo-spring-cloud-config-server</module>
         <module>demo-spring-cloud-server</module>
         <module>demo-spring-cloud-client</module>
+        <module>demo-spring-cloud-zuul</module>
     </modules>
 
     <parent>

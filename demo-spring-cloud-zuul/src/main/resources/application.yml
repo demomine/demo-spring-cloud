@@ -1,0 +1,36 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: demo-springcloud-zuul
+zuul:
+  routes:
+    demo-springcloud-client: /client/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8111/eureka/
+
+
+
+
+#  add-host-header: true
+#  add-proxy-headers: true
+#  host:
+#    max-per-route-connections:  20
+#    max-total-connections: 200
+#  ignore-local-service: true
+#  ignore-security-headers: true
+#  ignored-headers: false
+#  ignored-patterns:
+#  ignored-services:
+#  prefix:
+#  remove-semicolon-content: true
+#  retryable: true
+#  ribbon-isolation-strategy: semaphore
+#  s-e-c-u-r-i-t-y-h-e-a-d-e-r-s:
+#  servlet-path:
+#  ssl-hostname-validation-enabled: true
+#  strip-prefix: true
+#  trace-request-body: true

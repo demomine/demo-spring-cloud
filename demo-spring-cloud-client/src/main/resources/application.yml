@@ -1,5 +1,5 @@
 server:
- port: 8333
+ port: 8222
 
 
 
@@ -11,12 +11,22 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8555/eureka/
+      defaultZone: http://localhost:8111/eureka/
 
 endpoints:
   health:
     enabled: true
     path: /health
+zuul:
+  routes:
+    demo-springcloud-client:  /demo/**
+  ignored-services: '*'
+  ignore-local-service: true
+
+
+ribbon:
+  eureka:
+    enabled: false
 
 #eureka:
 #  instance:

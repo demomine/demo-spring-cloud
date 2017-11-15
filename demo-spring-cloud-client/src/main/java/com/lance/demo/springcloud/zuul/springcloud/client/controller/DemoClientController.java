@@ -1,6 +1,6 @@
-package com.lance.demo.springcloud.client.controller;
+package com.lance.demo.springcloud.zuul.springcloud.client.controller;
 
-import com.lance.demo.springcloud.client.service.DemoClientService;
+import com.lance.demo.springcloud.zuul.springcloud.client.service.DemoClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

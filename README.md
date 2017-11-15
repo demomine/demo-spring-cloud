@@ -81,4 +81,32 @@ turbine.combine-host-port参数设置为true，可以让同一主机上的服务
 ##  Client Side Load Balancer
 ##  External Configuration
 ##  Router and Filter
+##  ZUUL
+
+### 提供的功能
+1.  Authentication
+
+2.  Insights
+
+3.  Stress Testing
+
+4.  Canary Testing
+
+5.  Dynamic Routing
+
+6.  Service Migration
+
+7.  Load Shedding
+
+8.  Security
+
+9.  Static Response handling
+
+10. Active/Active traffic management
+
+
+
+
+##  问题
+1.  Load balancer does not have available server for client: demo-springcloud-client
 
